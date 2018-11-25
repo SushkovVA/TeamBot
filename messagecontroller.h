@@ -11,8 +11,6 @@ class MessageController : public QObject
 public:
     explicit MessageController(QObject *parent = nullptr);
 
-signals:
-
 public slots:
     Q_INVOKABLE void setUserName(const QString& userName);
     Q_INVOKABLE void messageSend(const QString& message);
